@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TV Maze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">TV Maze</a>
+      </div>
+    </nav>
+    
+    <div class="container">
+
+      <div class="row m-3">
+        <div class="col">
+            <form class="d-flex" id="search-form">
+              <input class="form-control" id="search-query" value="">
+              <button class="btn btn-secondary" type="submit">Go!</button>
+            </form>
+        </div>
+      </div>
+
+    <div class="row mt-3" id="shows-list">
+    </div>
+
+    <!-- style="display: none" -->
+
+
+      <div class="container position-absolute fixed-top shadow-lg bg-dark my-5 d-none w-100 w-md-50" id="episode-container">
+        <div class="row justify-content-center">
+          <div class="col-8 col-md-6">
+            <h2 class="text-light text-center">Episodes</h2>
+                <button type="button" class="btn btn-danger align-content-end" id="remove">&#x2715</button>
+              <section class="position-relative" id="episodes-area">
+                
+              </section>  
+          </div>
+        </div>
+     
+    
+</div>
+
+
+  </div>
+
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="tvmaze.js"></script>
+  </body>
+</html>
