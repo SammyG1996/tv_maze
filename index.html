@@ -14,16 +14,35 @@
       </div>
     </nav>
     
+    
     <div class="container">
 
       <div class="row m-3">
         <div class="col">
             <form class="d-flex" id="search-form">
-              <input class="form-control" id="search-query" value="">
+              <input class="form-control" id="search-query" value="" placeholder="Search shows here">
               <button class="btn btn-secondary" type="submit">Go!</button>
             </form>
         </div>
       </div>
+
+
+
+      <div class="container sticky-top shadow-lg bg-dark my-5 d-none overflow-auto" style=" height: 80vh; width: 80vw;" id="episode-container">
+  
+        <div class="row justify-content-center">
+          <div class="col-8 col-md-6">
+            <h2 class="text-light text-center">Episodes</h2>
+                <button type="button" class="btn btn-danger align-content-end sticky-top" id="remove">Close &#x2715</button>
+              <section class="position-relative" id="episodes-area">
+                
+              </section>  
+          </div>
+        </div>
+     
+    </div>
+
+
 
     <div class="row mt-3" id="shows-list">
     </div>
@@ -31,19 +50,6 @@
     <!-- style="display: none" -->
 
 
-      <div class="container position-absolute fixed-top shadow-lg bg-dark my-5 d-none w-100 w-md-50" id="episode-container">
-        <div class="row justify-content-center">
-          <div class="col-8 col-md-6">
-            <h2 class="text-light text-center">Episodes</h2>
-                <button type="button" class="btn btn-danger align-content-end" id="remove">&#x2715</button>
-              <section class="position-relative" id="episodes-area">
-                
-              </section>  
-          </div>
-        </div>
-     
-    
-</div>
 
 
   </div>
