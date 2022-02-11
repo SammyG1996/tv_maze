@@ -106,7 +106,7 @@ showsList.addEventListener('click', (e) => getEpisodes(e))
 async function getEpisodes(e) {
   const id = e.target.id
 
-  const episodes = await axios.get(`http://api.tvmaze.com/shows/${id}/episodes`); 
+  const episodes = await axios.get(`https://api.tvmaze.com/shows/${id}/episodes`); 
   populateEpisodes(episodes.data)
 
 
